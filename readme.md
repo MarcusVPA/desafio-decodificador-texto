@@ -5,7 +5,7 @@ Foi utilizado funções em JS para receber a entrada do usuário (mensagem), tra
 
 ## 🎨 Layout
 
-![image](https://github.com/MarcusVPA/desafio-decodificador-texto/img/layout.png)
+![image](https://github.com/MarcusVPA/desafio-decodificador-texto/blob/main/img/layout.png)
 
 ## 🛠 Tecnologias
 
