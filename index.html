@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alura-Codificador-Decodificador</title>
+</head>
+<body>
+    <main class="grid main">
+        <div class="left-grid">
+            <header>
+                <img src="./img/logo.svg" alt="logo">
+            </header>
+        </div>
+        <div id="middle-grid" class="middle-grid">
+            <textarea id="input-message" name="input-message" class="input-message" placeholder="Digite seu texto" rows="4" cols="20"></textarea>    
+            <div class="information">
+                <img src="./img/info.svg" alt="Ícone de informação">
+                <span class="message-information">Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div id="buttons" class="buttons">
+                <button id="encrypt-btn" class="encrypt-btn">Criptografar</button>
+                <button id="descrypt-btn" class="descrypt-btn">Descriptografar</button>
+            </div>
+        </div>
+        <div id="right-grid">
+            <div class="whiteboard">
+                <div id="primary" class="primary">
+                    <img src="./img/person.svg" alt="person" />
+                    <p>Nenhuma mensagem encontrada</p>
+                    <p>Digite um texto que deseje criptogradar ou descriptografar.</p>
+                </div>
+                <div id="secondary" class="secondary">
+                    <textarea id="output-message" name="output-message" class="output-message" placeholder="Nenhuma mensagem encontrada" value="" rows="10" cols="50"></textarea>
+                    <button id="copy-btn" class="copy-btn">Copiar</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer><p>Copyrigth &copy Marcus Vinicius Pereira Araujo- 2022</p></footer>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

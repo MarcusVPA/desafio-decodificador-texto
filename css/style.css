@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.grid {
+    width: 100vw;
+    height: 100vh;
+	display: grid;
+}
+
+.main {
+    grid-template-rows: 90% 10%;
+	grid-template-columns: calc(0.3fr -1rem) calc(0.5fr -1rem) calc(0.5fr -1rem);
+}
+
+.left-grid {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.middle-grid {
+    margin-top: 168px;
+    margin-left: 10px;    
+}
+
+.input-message {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    outline: none;
+    resize:none;
+    background: #E5E5E5;
+    width: 100%;
+}
+
+.input-message::placeholder {
+    color: #0A3871;
+}
+
+.information {
+    margin-top: 100px;
+}
+
+.message-information {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+
+.encrypt-btn {
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.descrypt-btn {
+    margin-left: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.copy-btn {
+    margin-top: 300px;;
+    margin-left: 30px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.whiteboard {
+    width: 400px;
+    height: 550px;
+    margin-left: 10px;
+    margin-top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin-top: 40px;
+}
+
+.whiteboard img {
+    margin-top: 50px;
+    margin-left: 32px;
+}
+
+.whiteboard p {
+    text-align: center;
+    margin-top: 32px;   
+}
+
+.whiteboard p>p {
+    text-align: center;
+    margin-top: 16px;   
+}
+
+.output-message {
+    text-align: center;
+    display: block;
+    border: none;
+    outline: none;
+    resize:none;
+}
+
+.secondary {
+    display: none;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;   
+}
+
+.footer p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .whiteboard {
+        width: 320px;
+        height: 550px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        margin-top: 0 auto;
+    }
+
+    .buttons {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .descrypt-btn {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .output-message {
+        width: 80%;
+    }
+
+    .whiteboard img {
+        margin-left: 32px;
+        width: 80%;
+    }
+    
+    .copy-btn  {
+        margin-left: 0;
+    }
+}
